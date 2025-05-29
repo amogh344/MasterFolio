@@ -1,0 +1,82 @@
+/* Investment Form Container */
+.investment-form {
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.85), rgba(20, 20, 20, 0.95));
+  padding: 3rem 2.5rem;
+  margin: 3rem auto;
+  max-width: 480px;
+  width: 90%;
+  border-radius: 18px;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  color: #f5f5f5;
+  animation: fadeIn 0.6s ease;
+}
+
+/* Heading */
+.investment-form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Labels */
+.investment-form label {
+  display: block;
+  margin-top: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+/* Input Fields */
+.investment-form input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+  color: #eee;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.investment-form input:focus {
+  border-color: #ff4c4c;
+  background-color: #111;
+  outline: none;
+}
+
+/* Submit Button */
+.investment-form button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #ff4c4c;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 18px rgba(255, 76, 76, 0.6);
+}
+
+.investment-form button:hover {
+  background-color: #e03e3e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(224, 62, 62, 0.8);
+}
+
+/* Error Message */
+.investment-form .error {
+  color: #ff4c4c;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}

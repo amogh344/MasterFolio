@@ -1,0 +1,148 @@
+/* Investment List Container */
+.investment-list {
+  max-width: 720px;
+  width: 90%;
+  margin: 3rem auto;
+  padding: 2.5rem 2.5rem;
+  background: linear-gradient(145deg, rgba(0, 0, 0, 0.85), rgba(20, 20, 20, 0.95));
+  border-radius: 18px;
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.6);
+  color: #f5f5f5;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.6s ease;
+  
+  /* Scroll properties */
+  max-height: 70vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+  /* Scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: #ff4c4c #1a1a1a;
+}
+
+/* Custom scrollbar for WebKit */
+.investment-list::-webkit-scrollbar {
+  width: 8px;
+}
+.investment-list::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 10px;
+}
+.investment-list::-webkit-scrollbar-thumb {
+  background-color: #ff4c4c;
+  border-radius: 10px;
+}
+
+/* Heading */
+.investment-list h2 {
+  text-align: center;
+  margin-bottom: 2.2rem;
+  color: white;
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Empty state */
+.investment-list p.empty {
+  text-align: center;
+  color: #ccc;
+  font-style: italic;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+/* List reset */
+.investment-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual Investment Item */
+.investment-item {
+  background: linear-gradient(145deg, #1a1a1a, #121212);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: #ddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.investment-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(255, 0, 0, 0.5);
+}
+
+/* Highlighted fields */
+.investment-item strong {
+  color: #ff4c4c;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+
+/* Button controls */
+.investment-controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 0.5rem;
+}
+
+/* Action Buttons */
+.investment-item button {
+  padding: 0.55rem 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.investment-item button:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px);
+}
+
+/* Edit button */
+.investment-item button.edit {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Delete button */
+.investment-item button.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Input and Select Styling */
+.investment-item input,
+.investment-item select {
+  padding: 0.6rem 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background-color: #121212;
+  color: #eee;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  flex: 1;
+}
+
+.investment-item input:focus,
+.investment-item select:focus {
+  border-color: #ff4c4c;
+  background-color: #1a1a1a;
+  outline: none;
+}
